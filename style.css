@@ -69,3 +69,20 @@ button:hover {
   color: gray;
   margin-top: 5px;
 }
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: #f4243e;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 15px;
+}
+
+.delete-btn:hover {
+  background: #d41e34;
+}
