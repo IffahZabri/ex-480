@@ -17,8 +17,21 @@ postBtn.addEventListener("click", () => {
   time.classList.add("timestamp");
   time.textContent = new Date().toLocaleString();
 
+  const actions = document.createElement("div");
+  actions.classList.add("post-actions");
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("delete-btn");
+  deleteBtn.textContent = "🗑️ Delete";
+  deleteBtn.addEventListener("click", () => {
+    postDiv.remove();
+  });
+
+  actions.appendChild(deleteBtn);
+
   postDiv.appendChild(content);
   postDiv.appendChild(time);
+  postDiv.appendChild(actions);
 
   feed.prepend(postDiv);
 
