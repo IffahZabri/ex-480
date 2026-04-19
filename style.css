@@ -64,6 +64,41 @@ button:hover {
   border: 1px solid #222;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.like-btn {
+  padding: 5px 10px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.like-btn:hover {
+  background: #555;
+}
+
+.like-btn.liked {
+  background: #e0245e;
+  color: white;
+}
+
+.like-btn.liked:hover {
+  background: #c91c47;
+}
+
+.like-count {
+  font-size: 0.9rem;
+  color: gray;
+}
+
 .timestamp {
   font-size: 0.8rem;
   color: gray;
